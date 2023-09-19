@@ -31,6 +31,16 @@
         header nav ul li a:hover {
             color: #FFFF00; /* Green color on hover */
         }
+        .home-button {
+            display: flex;
+            align-items: center;
+        }
+
+        .home-button img {
+            width: 24px; /* Adjust the width of the image as needed */
+            height: 24px; /* Adjust the height of the image as needed */
+            margin-right: 5px; /* Add spacing between the icon and text */
+        }
     </style>
     <title>About Me</title>
 </head>
@@ -38,7 +48,12 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a class="home-button" href="index.html">
+                        <img src="dog-lapa.png" alt="Home Icon">
+                        Home
+                    </a>
+                </li>
                 <li><a href="ctf-events.html">CTF Events</a></li>
                 <li><a href="rating.html">Rating</a></li>
                 <li><a href="about-me.html">About Me</a></li>
