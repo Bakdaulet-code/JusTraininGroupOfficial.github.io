@@ -5,12 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
+        /* Style for the entire header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #000;
-            color: #fff; /* Set text color to white for contrast */
+            padding: 25px 50px;
+            position: relative; /* Enable positioning */
         }
 
-        /* Custom hacker-style text styling */
+        /* Style for the icon */
+        .header-icon {
+            position: absolute; /* Position the icon absolutely within the header */
+            top: 10px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+            width: 50px; /* Adjust the width of the image as needed */
+            height: 50px; /* Adjust the height of the image as needed */
+        }
+
+        /* Style for the navigation links */
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-right: 30px; /* Add spacing between the navigation buttons */
+        }
+
+        header nav ul li {
+            margin-right: 30px; /* Add spacing between the navigation buttons */
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth transition */
+        }
+
+        header nav ul li a:hover {
+            color: #00ff00; /* Green color on hover */
+        }
+
         .hacker-text {
             font-family: 'Courier New', monospace;
             font-size: 50px;
@@ -24,39 +63,25 @@
             letter-spacing: 4px;
             margin: 20px 0;
         }
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s; /* Smooth transition */
+
+        body {
+            background-color: #000;
+            color: #fff; /* Set text color to white for contrast */
         }
 
-        header nav ul li a:hover {
-            color: #FFFF00; /* Green color on hover */
-        }
-
-        .home-button {
-            display: flex;
-            align-items: center;
-        }
-
-        .home-button img {
-            width: 24px; /* Adjust the width of the image as needed */
-            height: 24px; /* Adjust the height of the image as needed */
-            margin-right: 5px; /* Add spacing between the icon and text */
-        }
-
+        /* Rest of your styles */
+        /* ... */
     </style>
     <title>JusTraininGroup</title>
 </head>
 <body>
     <header>
+        <a href="index.html">
+            <img src="image-icon.png" alt="Header Icon" class="header-icon">
+        </a>
         <nav>
             <ul>
-                <li>
-                    <a class="home-button" href="index.html">
-                        <img src="dog-lapa.png" alt="Home Icon">
-                    </a>
-                </li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="ctf-events.html">CTF Events</a></li>
                 <li><a href="rating.html">Rating</a></li>
                 <li><a href="about-me.html">About Me</a></li>
@@ -65,13 +90,14 @@
         </nav>
     </header>
 
-
     <main>
-        <div class="hacker-text">Welcome to JusTraininGroup</div>
+        <div class="hero-container">
+            <div class="environment"></div>
+            <h2 class="hero glitch layers" data-text="Juan on Juan"><span>Welcome to 'JusTraininGroup'</span></h2>
+          </div>
+        </section>    
     </main>
-
     <footer>
         <p>&copy; 2023 JusTraininGroup</p>
     </footer>
 </body>
-</html>

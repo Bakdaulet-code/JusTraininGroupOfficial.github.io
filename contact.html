@@ -28,31 +28,42 @@
             transition: color 0.3s; /* Smooth transition */
         }
 
+        header nav ul li {
+            margin-right: 30px; /* Add spacing between the navigation buttons */
+        }
+
         header nav ul li a:hover {
             color: #FFFF00; /* Green color on hover */
         }
-        .home-button {
+
+        header {
             display: flex;
+            justify-content: space-between;
             align-items: center;
+            background-color: #000;
+            padding: 25px 50px;
+            position: relative; /* Enable positioning */
         }
 
-        .home-button img {
-            width: 24px; /* Adjust the width of the image as needed */
-            height: 24px; /* Adjust the height of the image as needed */
-            margin-right: 5px; /* Add spacing between the icon and text */
+        /* Style for the icon */
+        .header-icon {
+            position: absolute; /* Position the icon absolutely within the header */
+            top: 10px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+            width: 50px; /* Adjust the width of the image as needed */
+            height: 50px; /* Adjust the height of the image as needed */
         }
     </style>
     <title>Contact Us</title>
 </head>
 <body>
     <header>
+        <a href="index.html">
+            <img src="image-icon.png" alt="Header Icon" class="header-icon">
+        </a>
         <nav>
             <ul>
-                <li>
-                    <a class="home-button" href="index.html">
-                        <img src="dog-lapa.png" alt="Home Icon">
-                    </a>
-                </li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="ctf-events.html">CTF Events</a></li>
                 <li><a href="rating.html">Rating</a></li>
                 <li><a href="about-me.html">About Me</a></li>
