@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add a click event listener to the button
     changeColorButton.addEventListener("click", changeBackgroundColor);
-});
     
+});

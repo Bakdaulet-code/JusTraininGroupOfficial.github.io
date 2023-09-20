@@ -9,7 +9,8 @@ l i {
 body {
     position: relative;
     padding-bottom: 70px;
-    height: 88vh;
+    height: 91vh;
+    text-align: center;
 }
 
 /* Basic styling for the header and navigation */
@@ -45,10 +46,11 @@ section {
 footer {
     background-color: #000;
     color: #fff;
-    text-align: center;
     padding: 10px;
     position: absolute;
     bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 body {
@@ -554,10 +556,40 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.5;
+    opacity: 0.2;
     filter: blur(5px);
     background: url(https://images.unsplash.com/photo-1602136773736-34d445b989cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80)
       center no-repeat;
     background-size: cover;
   }
+
+  /* Style for the navigation links */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-right: 20px; /* Add spacing between the navigation buttons */
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition */
+  }
+  
+  header nav ul li a:hover {
+    color: #00ff00; /* Green color on hover */
+  }
+  
+  /* Style for the "current" class (highlighted section) */
+  header nav ul li a.current {
+    background-color: yellow; /* Yellow background for the current section */
+    color: #000; /* Black text color for the current section */
+  }
+  
+  
   
